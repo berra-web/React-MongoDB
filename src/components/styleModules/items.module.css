@@ -1,0 +1,21 @@
+.length {
+    width: 380px !important;
+    height: 600px !important;
+    padding: 10px !important;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.head {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px;
+}
+  
+img {
+    width: 80%;
+    height: auto;
+}

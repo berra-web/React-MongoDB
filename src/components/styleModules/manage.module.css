@@ -1,0 +1,17 @@
+.createBtn {
+    height: 60px;
+    width: 250px;
+    font-size: 25px !important;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+td {
+    vertical-align: middle !important;
+    font-style: none !important;
+}
+  
+.btnManage {
+    margin-left: 5px;
+    margin-right: 5px;
+}

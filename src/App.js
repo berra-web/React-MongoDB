@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Items';
+import ManageItem from './pages/admin/ManageItems';
+import Nav from './components/Nav';
+import Item from './pages/Item';
+import UpdateItem from './pages/admin/UpdateItem';
+import CreateItem from './pages/admin/CreateItem';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path='/' exact component={Home}/>
+          <Route path='/manage-post' component={ManageItem}/>
+          <Route path='/update-post/:id' component={UpdateItem}/>
+          <Route path='/item-page/:id' component={Item}/>
+          <Route path='/create-post' component={CreateItem} />
+        </Switch>
+      </Router>
     </div>
   );
 }
+
+// ATT GÖRA
+//
+// Göra CSS modules istället för allt i App.css
 
 export default App;

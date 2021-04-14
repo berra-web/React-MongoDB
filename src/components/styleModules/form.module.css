@@ -1,0 +1,11 @@
+.text{
+    text-align: start;
+}
+
+.validate {
+    border: 2px solid green !important;
+}
+  
+.unvalid {
+    border: 2px solid red !important;
+}
